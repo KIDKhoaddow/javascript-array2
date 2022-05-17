@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .board tr td{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+
+        }
+        .board table{
+            border-collapse: collapse;
+        }
+        .board span{
+            font-size: 60px;
+        }
+    </style>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th>Bàn cờ Caro</th>
+        <td><button onclick="resetGame()">Reset</button></td>
+    </tr>
+
+</table>
+<br>
+
+<table class="board" >
+    <tr>
+        <td onclick="play(1,1)"><span id="display11"></span></td>
+        <td onclick="play(1,2)"><span id="display12"></span></td>
+        <td onclick="play(1,3)"><span id="display13"></span></td>
+    </tr>
+    <tr>
+        <td onclick="play(2,1)"><span id="display21"></span></td>
+        <td onclick="play(2,2)"><span id="display22"></span></td>
+        <td onclick="play(2,3)"><span id="display23"></span></td>
+    </tr>
+    <tr>
+        <td onclick="play(3,1)"><span id="display31"></span></td>
+        <td onclick="play(3,2)"><span id="display32"></span></td>
+        <td onclick="play(3,3)"><span id="display33"></span></td>
+    </tr>
+</table>
+
+</body>
+<script src="Ex3-CaroBoard.js"></script>
+</html>
